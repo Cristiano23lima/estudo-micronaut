@@ -1,0 +1,17 @@
+version: '3.7'
+services:
+  app:
+    image: cristiano23lima/micronaut:11-gradle
+    networks:
+      - micronaut-network
+    ports:
+      - 8081:8081
+    tty: true
+    container_name: disparador-email
+    command: bash -c "tail -f /dev/null"
+    volumes:
+      - ".:/usr/src/app"
+networks:
+  micronaut-network:
+    driver: bridge
+    name: micronaut-network

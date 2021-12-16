@@ -1,0 +1,11 @@
+micronaut:
+  application:
+    name: disparadorEmail
+kafka:
+    bootstrap:
+      servers: 192.168.100.71:9092
+    # consumers:
+    
+    #     disparador-email:
+    #         value:
+    #             deserializer: org.apache.kafka.common.serialization.ByteArrayDeserializer
