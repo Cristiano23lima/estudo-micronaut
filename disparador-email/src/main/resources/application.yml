@@ -9,5 +9,3 @@ kafka:
     #     disparador-email:
     #         value:
     #             deserializer: org.apache.kafka.common.serialization.ByteArrayDeserializer
-sendgrid.apikey: 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
-sendgrid.fromemail: dj7cristiano@gmail.com

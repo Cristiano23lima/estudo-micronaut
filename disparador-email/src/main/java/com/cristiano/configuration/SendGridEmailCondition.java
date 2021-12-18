@@ -4,6 +4,9 @@ import io.micronaut.context.condition.Condition;
 import io.micronaut.context.condition.ConditionContext;
 import io.micronaut.core.util.StringUtils;
 
+// Para inicializar o serviço, primeiro precisa garantir que as condições abaixo estão sendo satisfeitas
+// Ou Seja, precisa garantir que os env SENDGRID_APIKEY, SENDGRID_FROM_EMAIL estejam setados no seu servidor ou maquina local
+// Caso não esteja, ele lançara um erro dizendo que não foi possível encontrar os beans que implementam essa condição (@Requires)
 public class SendGridEmailCondition implements Condition{
 
     @Override
